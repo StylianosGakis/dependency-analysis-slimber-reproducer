@@ -12,5 +12,6 @@ class MainActivity : AppCompatActivity() {
         Timber.plant(DebugTree())
         setContentView(R.layout.activity_main)
         e { "" }
+//        e(Throwable()) // uncomment this and run `./gradlew :app:projectHealth` again and it will no longer suggest to remove it since it's not an inline function.
     }
 }
